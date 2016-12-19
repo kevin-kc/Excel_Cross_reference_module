@@ -2,17 +2,15 @@
 summary: small script adding an excel auto execute function allowing for cross linking between sheets, sample excel file in directory as an example.
 
 /* Function LookupMatches - for cross linking two worksheets.
-
-    specifications: see the column “Mappings if there is more than one", function should be generic, allow user to specify the required       table names and field names as properties.
+specifications: see the column “Mappings if there is more than one", function should be generic, allow user to specify the required table names and field names as properties.
     
-    E.g. when the function is run on the ECAR tab
-    LookupMaches({ECAR Table Name},“Full Name”,{TBS Table Name},”ECAR Full Name”,”Full Name”)
+E.g. when the function is run on the ECAR tab
+LookupMaches({ECAR Table Name},“Full Name”,{TBS Table Name},”ECAR Full Name”,”Full Name”)
 
-    P1.  and P2. First Table and Field to match
-    P3.  And P4. Second Table and Field to match,
-    P5.  Column containing the values to return as a comma separated list.
-    
- */
+P1.  and P2. First Table and Field to match
+P3.  And P4. Second Table and Field to match,
+P5.  Column containing the values to return as a comma separated list.
+*/
 
 
 Public Function LookupMatches(startTableName As Variant, startFullName As String, targetTableName As Variant, targetFullName As String, _
